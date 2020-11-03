@@ -1,4 +1,11 @@
-# NIDS Python Lecture Part 1
-You can access the lecture Jupyter notebook by clicking on "Launch Binder"
+# NIDS Python Lecture Series
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-part1/HEAD?filepath=python_part1.ipynb)
+You can access any of the lecture Jupyter notebooks by clicking on the associated "Launch Binder" badge.
+
+## NIDS Python - Part 1
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-series/HEAD?filepath=python_part1.ipynb)
+
+## NIDS Python - Part 2
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-series/HEAD?filepath=python_part2.ipynb)
