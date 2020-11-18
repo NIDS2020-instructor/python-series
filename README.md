@@ -2,17 +2,9 @@
 
 You can access any of the lecture Jupyter notebooks by clicking on the associated "Launch Binder" badge.
 
-## NIDS Python - Part 1
+## NIDS Python - Part 1 to 4
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-series/HEAD?filepath=python_part1.ipynb)
-
-## NIDS Python - Part 2
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-series/HEAD?filepath=python_part2.ipynb)
-
-## NIDS Python - Part 3
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-series/HEAD?filepath=python_part3.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NIDS2020-instructor/python-series/HEAD?filepath=python_part4.ipynb)
 
 # How to setup your own coding environment at home ?
 
@@ -35,11 +27,9 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
 
 ### Windows 10
 * Make sure you have installed the latest OS updates (Windows menu -> `Check for Updates`)
-* Install WSL2 as indicated [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (you may also need info from [here](https://codefellows.github.io/setup-guide/windows/)), then install the Ubuntu 20.04 app and start it (it is recommend to also install the Terminal app as suggested in the first link)
-* From Windows Store, install:
-  * Ubuntu 20.04 
-  * VS Code (Visual Studio Code)
-* Start VS Code, and inside the program accept suggestion of installing "VS Code Remote Pack" to use with WSL2 (for more information please see [these instructions](https://code.visualstudio.com/docs/remote/wsl))
+* Install WSL2 as indicated [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (you may also need info from [here](https://codefellows.github.io/setup-guide/windows/)), then install the Ubuntu 20.04 app from the Microsoft store as indicated in the first link (it is recommended to also install the Terminal app as suggested in that link)
+* Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows) 
+* Start VS Code, and inside the program accept the suggestion of installing "VS Code Remote Pack" to use with WSL2 (for more information please see [these instructions](https://code.visualstudio.com/docs/remote/wsl))
 * Please indicate any problem during installation on Slack (after your very first message, please immediately hover on it and click on the chat buble to `Reply in thread` for  all your messages to be in a single thread)
 
 ## Second part, OS independent (almost)
@@ -65,11 +55,11 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
     `conda activate base`
     * Generate Jupyter notebook configuration  
     `jupyter notebook --generate-config`
-    * Edit `~/.jupyter/jupyter_notebook_config.py` (for example with VS Code) to make sure to have the following two configuration statements (no `#` in front)  
+    * Edit `~/.jupyter/jupyter_notebook_config.py` (for example with VS Code) to make sure to have the following two configuration statements (no `#` in front) inside that file (asuming you have Chrome installed, otherwise change the path below to the location of your Internet browser executable): 
       * `c.NotebookApp.use_redirect_file = False`
       * `c.NotebookApp.browser =  u'/mnt/c/Program\ Files\ \(x86\)/Google/Chrome/Application/chrome.exe %s'`
-* To start a new project, you could do something like:
-  * Create a new project directory `my_proj` inside a parent directory `my_projeccts`
+* **For all OS**, to start a new project, you could do something like:
+  * Create a new project directory `my_proj` inside a parent directory `my_projects`
     ```
     cd
     mkdir my_projects
@@ -84,7 +74,7 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
     ```
   * A page should automatically open in your internet browser. If you cannot find it or it does not happen, read the output on the terminal and copy the URL indicated inside a tab of your internet browser
   * To start a new notebook, in the Jupyter page in your browser, click in the top right on `New` and then choose the conda environment you want (the python process which will interpret your commands is called a kernel)
-* To run the examples from the course, you could do something like:
+* **For all OS**, to run the examples from the course, you could do something like:
   * Create a directory `NIDS` then clone the python lectures inside it
     ```
     cd
