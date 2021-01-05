@@ -30,6 +30,7 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
 * Install WSL2 as indicated [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (you may also need info from [here](https://codefellows.github.io/setup-guide/windows/)), then install the Ubuntu 20.04 app from the Microsoft store as indicated in the first link (it is recommended to also install the Terminal app as suggested in that link)
 * Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows) 
 * Start VS Code, and inside the program accept the suggestion of installing "VS Code Remote Pack" to use with WSL2 (for more information please see [these instructions](https://code.visualstudio.com/docs/remote/wsl))
+* Start a terminal with WSL 2 and install [Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) **making sure to follow the Linux instructions** (so make sure sure to use the link i indicated and not using the instructions for Windows: your WSL 2 terminal is using a Linux kernel and you have to install Miniconda there !) 
 * Please indicate any problem during installation on Slack (after your very first message, please immediately hover on it and click on the chat buble to `Reply in thread` for  all your messages to be in a single thread)
 
 ## Second part, OS independent (almost)
