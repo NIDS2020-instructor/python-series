@@ -42,8 +42,9 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
   `conda config --prepend channels conda-forge`
   * Update your conda version to the latest:  
   `conda update -n base -c defaults conda`
-  * Install Jupyter notebook in base environment (you will need to install the `ipykernel` module in each other conda python environment for Jupyter to find your environments automatically):  
-  `conda install -n base nb_conda_kernels ipykernel`
+  * Install Jupyter notebook in the `base` environment (this is the "core" conda environment where I would advise not to install any other packages than essential ones and always create other environments for your projects):  
+  `conda install -n base nb_conda_kernels jupyter`
+    * Note: when creating a new environment, cf example below, you will need to install the `ipykernel` module in each other conda python environment for Jupyter to find your environments automatically
   * Create a data science environment, for example as below:  
     ```
     conda create -n ds38 python=3.8
