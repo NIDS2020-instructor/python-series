@@ -27,10 +27,26 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
 
 ### Windows 10
 * Make sure you have installed the latest OS updates (Windows menu -> `Check for Updates`)
-* Install WSL2 as indicated [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (you may also need info from [here](https://codefellows.github.io/setup-guide/windows/)), then install the Ubuntu 20.04 app from the Microsoft store as indicated in the first link (it is recommended to also install the Terminal app as suggested in that link)
+* Install WSL2 as indicated [here](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (you may also need info from [here](https://codefellows.github.io/setup-guide/windows/)), then install the Ubuntu 20.04 app from the Microsoft store as indicated in the first link (it is recommended to also install the Windows Terminal app as suggested in that link)
 * Install [Visual Studio Code](https://code.visualstudio.com/docs/setup/windows) 
 * Start VS Code, and inside the program accept the suggestion of installing "VS Code Remote Pack" to use with WSL2 (for more information please see [these instructions](https://code.visualstudio.com/docs/remote/wsl))
-* Start a terminal with WSL 2 and install [Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) **making sure to follow the Linux instructions** (so make sure sure to use the link i indicated and not using the instructions for Windows: your WSL 2 terminal is using a Linux kernel and you have to install Miniconda there !) 
+* Start a terminal with WSL 2
+  * (Preferred) If you installed the Windows Terminal App as indicated previously:
+    * Start this app (search for "Windows Terminal" in the Windows search bar at the bottom left of your screen, and then click on the app)
+    * By default you will see a Windows PowerShell, that **IS NOT** what we want. To open a Linux shell with the Ubuntu 20.04 OS you installed previously, click on the downward arrow head (⌄) next to the tab Title, and choose "Ubuntu 20.04": that **IS** what we want (see [here](https://superuser.com/questions/1456511/is-there-a-way-to-change-the-default-shell-in-windows-terminal) to change the default profile to Ubuntu so that you don't always have to do this every time you start a terminal)
+  * (Alternative) Start the Ubuntu 20.04 app by searching for "Ubuntu" in the Windows search bar at the bottom left of your screen and then clicking on the app
+* Install [Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) **making sure to follow the Linux instructions** (so make sure sure to use the link i indicated and not using the instructions for Windows: your WSL 2 terminal is using a Linux kernel and you have to install Miniconda there !). For clarity these instructions are repeated below but may become outdated (the link just provided takes precedence over the instructions below):
+  * Go to the terminal you opened in the previous step
+  * Via the terminal navigate to the place where you downloaded the miniconda file. Keep in mind that any path to directory and files on a Windows C drive are accessible at the path /mnt/c, so for example:
+    * If your username on Windows is `smartuser` and you downloaded the file to your Windows `Downloads` directory, on the WSL 2 terminal you can navigate to that directory with: `cd /mnt/c/Users/smartuser/Downloads`
+    * If for some reason your data is on a Windows drive with letter F and you downloaded the miniconda install script on your Dekstop, you will need to type in your WSL 2 terminal: `cd /mnt/f/Users/smartuser/Desktop`
+    * Etc.
+  * Make sure the miniconda install script is indeed in the directory you just navigate (at this time the script is called `Miniconda3-latest-Linux-x86_64.sh` but it can change later) :
+    * `ls Miniconda3-latest-Linux-x86_64.sh`
+    * If the previous command gives you an error, it means you are not in the right directory or you did not provided the correct filename to `ls`
+  * Now follow the Linux instructions on the miniconda link above. For clarity these instructions which are few at this time are repeated here:
+    * `bash Miniconda3-latest-Linux-x86_64.sh`
+    * Accept all the default values and the license agreement
 * Please indicate any problem during installation on Slack (after your very first message, please immediately hover on it and click on the chat buble to `Reply in thread` for  all your messages to be in a single thread)
 
 ## Second part, OS independent (almost)
