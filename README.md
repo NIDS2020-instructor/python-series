@@ -37,7 +37,7 @@ You can access any of the lecture Jupyter notebooks by clicking on the associate
   * (Alternative) Start the Ubuntu 20.04 app by searching for "Ubuntu" in the Windows search bar at the bottom left of your screen and then clicking on the app
 * Install [Miniconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/linux.html) **making sure to follow the Linux instructions** (so make sure sure to use the link i indicated and not using the instructions for Windows: your WSL 2 terminal is using a Linux kernel and you have to install Miniconda there !). For clarity these instructions are repeated below but may become outdated (the link just provided takes precedence over the instructions below):
   * Go to the terminal you opened in the previous step
-  * Via the terminal navigate to the place where you downloaded the miniconda file. Keep in mind that any path to directory and files on a Windows C drive are accessible at the path /mnt/c, so for example:
+  * Via the terminal navigate to the place where you downloaded the miniconda file. Keep in mind that any path to directory and files on a Windows C drive are accessible via WSL 2 at the path `/mnt/c`, so for example:
     * If your username on Windows is `smartuser` and you downloaded the file to your Windows `Downloads` directory, on the WSL 2 terminal you can navigate to that directory with: `cd /mnt/c/Users/smartuser/Downloads`
     * If for some reason your data is on a Windows drive with letter F and you downloaded the miniconda install script on your Dekstop, you will need to type in your WSL 2 terminal: `cd /mnt/f/Users/smartuser/Desktop`
     * Etc.
